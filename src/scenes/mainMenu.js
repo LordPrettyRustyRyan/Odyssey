@@ -22,7 +22,7 @@ export default function mainMenu() {
   ];
 
   k.add([
-    k.text("RUN FROM PO-PO, SONIC", { font: "mania", size: 96 }),
+    k.text("RUN FROM PO-PO, IMAGINE", { font: "mania", size: 96 }),
     k.anchor("center"),
     k.pos(k.center().x, 200),
   ]);
