@@ -6,7 +6,7 @@ import mainMenu from "./scenes/mainMenu";
 
 k.loadSprite("chemical-bg", "graphics/chemical-bg.png");
 k.loadSprite("platforms", "graphics/platforms.png");
-k.loadSprite("sonic", "graphics/sonic.png", {
+k.loadSprite("imagine", "graphics/imagine.png", {
   sliceX: 8,
   sliceY: 2,
   anims: {

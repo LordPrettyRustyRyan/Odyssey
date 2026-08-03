@@ -4,8 +4,9 @@ export default function disclaimer() {
   k.add([
     k.text(
       `
-        Sonic is owned by SEGA.
-        This is a Clone made by Imagine using assets from Sonic Mania.
+        This Game is in developement still.
+        This is a Playable Demo version of the game of your truly, IMAGINE.
+        Stick around, i'ma make this game way awesome.
       `,
       { font: "mania", size: 32 }
     ),

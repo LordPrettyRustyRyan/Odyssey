@@ -1,5 +1,5 @@
 import k from "../kaplayCtx";
-import { makeSonic } from "../entities/sonic";
+import { makeImagine } from "../entities/imagine";
 
 export default function mainMenu() {
   if (!k.getData("best-score")) k.setData("best-score", 0);
@@ -22,7 +22,7 @@ export default function mainMenu() {
   ];
 
   k.add([
-    k.text("RUN FROM PO-PO, IMAGINE", { font: "mania", size: 96 }),
+    k.text("COLLECT ALL RINGS, IMAGINE", { font: "mania", size: 96 }),
     k.anchor("center"),
     k.pos(k.center().x, 200),
   ]);
@@ -33,7 +33,7 @@ export default function mainMenu() {
     k.pos(k.center().x, k.center().y - 200),
   ]);
 
-  makeSonic(k.vec2(200, 745));
+  makeImagine(k.vec2(200, 745));
   const gameSpeed = 4000;
   k.onUpdate(() => {
     if (bgPieces[1].pos.x < 0) {
