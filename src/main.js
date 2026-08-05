@@ -4,7 +4,7 @@ import game from "./scenes/game";
 import gameover from "./scenes/gameover";
 import mainMenu from "./scenes/mainMenu";
 
-k.loadSprite("chemical-bg", "graphics/chemical-bg.png");
+k.loadSprite("mount-doom", "graphics/mount-doom.png");
 k.loadSprite("platforms", "graphics/platforms.png");
 k.loadSprite("imagine", "graphics/imagine.png", {
   sliceX: 8,
@@ -21,7 +21,7 @@ k.loadSprite("ring", "graphics/ring.png", {
     spin: { from: 0, to: 15, loop: true, speed: 30 },
   },
 });
-k.loadSprite("motobug", "graphics/motobug.png", {
+k.loadSprite("smeagol", "graphics/smeagol.png", {
   sliceX: 5,
   sliceY: 1,
   anims: {

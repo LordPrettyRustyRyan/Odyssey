@@ -1,6 +1,6 @@
 import k from "../kaplayCtx";
 import { makeImagine } from "../entities/imagine";
-import { makeMotobug } from "../entities/motobug";
+import { makeSmeagol } from "../entities/smeagol";
 import { makeRing } from "../entities/ring";
 
 export default function game() {
@@ -8,9 +8,9 @@ export default function game() {
   k.setGravity(3100);
   const bgPieceWidth = 1920;
   const bgPieces = [
-    k.add([k.sprite("chemical-bg"), k.pos(0, 0), k.scale(2), k.opacity(0.8)]),
+    k.add([k.sprite("mount-doom"), k.pos(0, 0), k.scale(2), k.opacity(0.8)]),
     k.add([
-      k.sprite("chemical-bg"),
+      k.sprite("mount-doom"),
       k.pos(bgPieceWidth, 0),
       k.scale(2),
       k.opacity(0.8),
@@ -85,26 +85,26 @@ export default function game() {
     gameSpeed += 40;
   });
 
-  const spawnMotoBug = () => {
-    const motobug = makeMotobug(k.vec2(1950, 773));
-    motobug.onUpdate(() => {
+  const spawnSmeagol = () => {
+    const smeagol = makeSmeagol(k.vec2(1950, 773));
+    smeagol.onUpdate(() => {
       if (gameSpeed < 3000) {
-        motobug.move(-(gameSpeed + 300), 0);
+        smeagol.move(-(gameSpeed + 300), 0);
         return;
       }
-      motobug.move(-gameSpeed, 0);
+      smeagol.move(-gameSpeed, 0);
     });
 
-    motobug.onExitScreen(() => {
-      if (motobug.pos.x < 0) k.destroy(motobug);
+    smeagol.onExitScreen(() => {
+      if (smeagol.pos.x < 0) k.destroy(smeagol);
     });
 
     const waitTime = k.rand(0.5, 2.5);
 
-    k.wait(waitTime, spawnMotoBug);
+    k.wait(waitTime, spawnSmeagol);
   };
 
-  spawnMotoBug();
+  spawnSmeagol();
 
   const spawnRing = () => {
     const ring = makeRing(k.vec2(1950, 745));
