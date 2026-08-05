@@ -2,7 +2,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Kaplay](https://img.shields.io/badge/Kaplay-Game%20Engine-orange?style=for-the-badge)
+[![Kaplay](https://img.shields.io/badge/Kaplay-orange?style=for-the-badge)](https://kaplayjs.com)
 
 > A browser-based side-scrolling platformer built with JavaScript and Kaplay.
 
@@ -10,7 +10,7 @@
 
 Built as an exploration into browser-based game development, the project focuses on player movement, collision systems, sprite animation, collectibles, enemy interactions, and scene management while maintaining a pixel-driven lightweight architecture powered entirely by JavaScript.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ea52869-f007-48f6-a1c7-d384accbde97" />
+<img width="1900" height="1079" alt="Odyssey" src="https://github.com/user-attachments/assets/274d83b4-7cb3-4419-a2f2-a1b6365f71dc" />
 
 ## Features
 
